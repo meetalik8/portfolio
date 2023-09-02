@@ -1,33 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meetali Kapse Homepage</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/cb88b54bf5.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<!--     https://www.figma.com/proto/gcMU2QW5pauGHrMcFG4RwA/Portfolio?node-id=0-1 -->
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cb88b54bf5.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      :root {
+        --primary-text-color: #000000;
+        --secondary-text-color: #ffffff;
+        --accent-color: #f29ad8;
+        --accent-color-dark: #ee71c3;
+        --vibrant-color: #e305ad;
+      }
+      .star-five {
+        background: transparent;
+        margin: 50px 0;
+        position: relative;
+        display: block;
+        color: var(--accent-color);
+        width: 0px;
+        height: 0px;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid var(--accent-color);
+        border-left: 100px solid transparent;
+      }
+      .star-five:before {
+        border-bottom: 80px solid var(--accent-color);
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        background-color: transparent;
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -45px;
+        left: -65px;
+        display: block;
+        content: "";
+        transform: rotate(-35deg);
+      }
+      .star-five:after {
+        background-color: transparent;
+        position: absolute;
+        display: block;
+        color: var(--accent-color);
+        top: 3px;
+        left: -105px;
+        width: 0px;
+        height: 0px;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid var(--accent-color);
+        border-left: 100px solid transparent;
+        transform: rotate(-70deg);
+        content: "";
+      }
+    </style>
+  </head>
+  <body>
+    <!--     https://www.figma.com/proto/gcMU2QW5pauGHrMcFG4RwA/Portfolio?node-id=0-1 -->
     <nav>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li><a href="contact.html">contact me</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="contact.html">contact me</a></li>
+      </ul>
     </nav>
     <section class="intro">
-        <div class="intro-section">
-            <h1>Hello!</h1>
-            <p class="name-para">I am <span class="name">Meetali Kapse.</span></p>
+      <div class="intro-section">
+        <h1>Hello!</h1>
+        <p class="name-para">I am <span class="name">Meetali Kapse.</span></p>
         <div class="photo-text">
-        <div class="photo">
-            <img src="static/photo.jpeg" alt="picture of me smiling" height="200px">
-        </div>
-        <div class="info">
-            <p> I am a <strong>Third Year Information Technology Student </strong>at <i>Thadomal Shahani Engineering College</i> .<br>
-                I am currently learning Front-End Development and UI/UX designing.
-                <!-- I am very passionate about designing for inclusion and bridging the gap between technology and human experiences. 
+          <div class="photo">
+            <img
+              src="static/photo.jpeg"
+              alt="picture of me smiling"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <p>
+              I am a
+              <strong>Third Year Information Technology Student </strong>at
+              <i>Thadomal Shahani Engineering College</i> .<br />
+              I am currently learning Front-End Development and UI/UX designing.
+              <!-- I am very passionate about designing for inclusion and bridging the gap between technology and human experiences. 
                 Currently serving the position of <strong>Design Head</strong> at <i>IETE-TSEC</i>, former to that 
                 I was a design executive for last academic year where I collaborated with various other teams in my committee to
                 create posts for the Instagram page, website for our committee and banners for the flagship events.
@@ -37,18 +97,24 @@
                 I am constantly seeking new challenges and opportunities to grow as a designer and developer.
                 If you share my passion for designing with purpose and making a difference through technology, 
                 I would love to connect and explore ways to collaborate. -->
-                </p>
-        </div>
+            </p>
+          </div>
         </div>
         <!-- <i class="fa-regular fa-circle-right fa-2xl arrow"></i> -->
-        </div>
+      </div>
     </section>
     <div class="socialmedia">
-            <a href="contact.html">Connect with me!</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/meetalikapse/"><img src="static/linkedin.webp" alt="linkedin" height="35px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/meetalik8"><img src="static/github.png" alt="github" height="35px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com/meetsshutup"><img src="static/twitter.webp" alt="twitter" height="35px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </div>
+      <a href="contact.html">Connect with me!</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/in/meetalikapse/"
+        ><img src="static/linkedin.webp" alt="linkedin" height="35px" /></a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/meetalik8"
+        ><img src="static/github.png" alt="github" height="35px" /></a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://twitter.com/meetsshutup"
+        ><img src="static/twitter.webp" alt="twitter" height="35px" /></a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
