@@ -26,15 +26,15 @@ body {
   margin: 50px 0;
   position: relative;
   display: block;
-  color: #ffffff;
+  color: var(--accent-color);
   width: 0px;
   height: 0px;
   border-right: 100px solid transparent;
-  border-bottom: 70px solid #ffffff;
+  border-bottom: 70px solid var(--accent-color);
   border-left: 100px solid transparent;
 }
 .star-five:before {
-  border-bottom: 80px solid #ffffff;
+  border-bottom: 80px solid var(--accent-color);
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   background-color: transparent;
@@ -51,13 +51,13 @@ body {
   background-color: transparent;
   position: absolute;
   display: block;
-  color: #ffffff;
+  color: var(--accent-color);
   top: 3px;
   left: -105px;
   width: 0px;
   height: 0px;
   border-right: 100px solid transparent;
-  border-bottom: 70px solid #ffffff;
+  border-bottom: 70px solid var(--accent-color);
   border-left: 100px solid transparent;
   transform: rotate(-70deg);
   content: "";
