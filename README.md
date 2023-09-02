@@ -1,2 +1,2 @@
 # portfolio
-This is made using html, css and javascript. 
+This is made using HTML, CSS and JavaScript. 
