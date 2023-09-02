@@ -2,89 +2,216 @@
 <!-- https://devfolio.co/projects/healthbridge-b524 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-    <script src="https://kit.fontawesome.com/cb88b54bf5.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Pacifico&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/cb88b54bf5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Pacifico&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        :root {
-            --primary-text-color: #000000;
-            --secondary-text-color: #ffffff;
-            --accent-color: #F29AD8;
-            --accent-color-dark: #EE71C3;
-            --vibrant-color:#E305AD;
-        }
+      :root {
+        --primary-text-color: #000000;
+        --secondary-text-color: #ffffff;
+        --accent-color: #f29ad8;
+        --accent-color-dark: #ee71c3;
+        --vibrant-color: #e305ad;
+      }
+
+      .star-five {
+        background: transparent;
+        margin: 50px 0;
+        position: relative;
+        display: block;
+        color: var(--accent-color);
+        width: 0px;
+        height: 0px;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid var(--accent-color);
+        border-left: 100px solid transparent;
+      }
+      .star-five:before {
+        border-bottom: 80px solid var(--accent-color);
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        background-color: transparent;
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -45px;
+        left: -65px;
+        display: block;
+        content: "";
+        transform: rotate(-35deg);
+      }
+      .star-five:after {
+        background-color: transparent;
+        position: absolute;
+        display: block;
+        color: var(--accent-color);
+        top: 3px;
+        left: -105px;
+        width: 0px;
+        height: 0px;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid var(--accent-color);
+        border-left: 100px solid transparent;
+        transform: rotate(-70deg);
+        content: "";
+      }
     </style>
-</head>
-<body style="color: #000000; font-family: 'Pacifico', cursive; margin: 30px;">
+  </head>
+  <body style="color: #000000; font-family: 'Pacifico', cursive; margin: 30px">
     <nav>
-        <ul style="display: flex; justify-content: flex-end; align-items: center; list-style: none;">
-            <li style="margin: 0px 20px; font-size: 18px;"><a href="index.html" style=" text-decoration: none; display: inline-block; color: #000000;">home</a></li>
-            <li style="margin: 0px 20px; font-size: 18px;"><a href="projects.html" style=" text-decoration: none; display: inline-block; color: #E305AD;">projects</a></li>
-            <li style="margin: 0px 20px; font-size: 18px;"><a href="contact.html" style=" text-decoration: none; display: inline-block; color: #000000;">contact me</a></li>
-        </ul>
+      <ul
+        style="
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          list-style: none;
+        "
+      >
+        <li style="margin: 0px 20px; font-size: 18px">
+          <a
+            href="index.html"
+            style="text-decoration: none; display: inline-block; color: #000000"
+            >home</a
+          >
+        </li>
+        <li style="margin: 0px 20px; font-size: 18px">
+          <a
+            href="projects.html"
+            style="text-decoration: none; display: inline-block; color: #e305ad"
+            >projects</a
+          >
+        </li>
+        <li style="margin: 0px 20px; font-size: 18px">
+          <a
+            href="contact.html"
+            style="text-decoration: none; display: inline-block; color: #000000"
+            >contact me</a
+          >
+        </li>
+      </ul>
     </nav>
     <section class="projects">
-        <h1 style="margin-left: 50px; font-weight: 500;">Projects</h1>
-        <table style="display: flex; justify-content: center;">
-            <tr>
-            <th style="display: flex; justify-content: flex-start; font-size: 30px; font-weight: 500;">Health Bridge</th>
-            </tr>
-            <tr>
-               <td><a href="https://github.com/meetalik8/HealthBridge"><img src="static/healthbridge.png" alt="" width="800px" style="border: solid 2px #000000; box-shadow: 10px 10px #F29AD8; margin-bottom: 100px;"></a></td>
-            </tr>
-            <tr>
-            <th style="display: flex; justify-content: flex-start; font-size: 30px; font-weight: 500;">Kaam Khoj</th>
-            </tr>
-            <tr>
-               <td><a href="https://github.com/meetalik8/Kaam-Khoj"><img src="static/kaamkhoj.png" alt="" width="800px" style="border: solid 2px #000000; box-shadow: 10px 10px #F29AD8; margin-bottom: 100px;"></a></td>
-            </tr>
-            <tr>
-            <th style="display: flex; justify-content: flex-start; font-size: 30px; font-weight: 500;">Dementia Help</th>
-            </tr>
-            <tr>
-               <td><a href="https://dementia.meetali8.repl.co/"><img src="static/dementia.png" alt="" width="800px" style="border: solid 2px #000000; box-shadow: 10px 10px #F29AD8; margin-bottom: 100px;"></a></td>
-            </tr>
-            <tr>
-            <th style="display: flex; justify-content: flex-start; font-size: 30px; font-weight: 500;">Upserve</th>
-            </tr>
-            <tr>
-               <td><a href="https://github.com/meetalik8/UPSERVE-SYSTEM"><img src="static/upserve.png" alt="" width="800px" style="border: solid 2px #000000; box-shadow: 10px 10px #F29AD8; "></a></td>
-            </tr>
-        </table>
-        <!-- <table>
-            <tr>
-            <th>Health Bridge</th>
-            <th>Kaam Khoj</th>
-            <th>Dementia Help</th>
-            </tr>
-            <tr>
-                <td>
-                <a href="https://github.com/meetalik8/HealthBridge"><img src="static/healthbridge.png" alt="" height="200px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>
-                <a href="https://github.com/meetalik8/Kaam-Khoj"><img src="static/kaamkhoj.png" alt="" height="200px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>
-                <a href="https://dementia.meetali8.repl.co/"><img src="static/dementia.png" alt="" height="200px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            </tr>
-            <tr>
-            <th>Upserve</th>
-            <th>Sahara</th>
-            </tr>
-            <tr>
-                <td>
-                <a href="https://github.com/meetalik8/UPSERVE-SYSTEM"><img src="static/upserve.png" alt="" height="200px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>
-                <a href="https://github.com/meetalik8/Sahara"><img src="static/Sahara.jpeg" alt="" height="200px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            </tr>
-        </table> -->
+      <h1 style="margin-left: 50px; font-weight: 500">Projects</h1>
+      <table style="display: flex; justify-content: center">
+        <tr>
+          <th
+            style="
+              display: flex;
+              justify-content: flex-start;
+              font-size: 30px;
+              font-weight: 500;
+            "
+          >
+            Health Bridge
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://github.com/meetalik8/HealthBridge"
+              ><img
+                src="static/healthbridge.png"
+                alt=""
+                width="800px"
+                style="
+                  border: solid 2px #000000;
+                  box-shadow: 10px 10px #f29ad8;
+                  margin-bottom: 100px;
+                "
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <th
+            style="
+              display: flex;
+              justify-content: flex-start;
+              font-size: 30px;
+              font-weight: 500;
+            "
+          >
+            Kaam Khoj
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://github.com/meetalik8/Kaam-Khoj"
+              ><img
+                src="static/kaamkhoj.png"
+                alt=""
+                width="800px"
+                style="
+                  border: solid 2px #000000;
+                  box-shadow: 10px 10px #f29ad8;
+                  margin-bottom: 100px;
+                "
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <th
+            style="
+              display: flex;
+              justify-content: flex-start;
+              font-size: 30px;
+              font-weight: 500;
+            "
+          >
+            Dementia Help
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://dementia.meetali8.repl.co/"
+              ><img
+                src="static/dementia.png"
+                alt=""
+                width="800px"
+                style="
+                  border: solid 2px #000000;
+                  box-shadow: 10px 10px #f29ad8;
+                  margin-bottom: 100px;
+                "
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <th
+            style="
+              display: flex;
+              justify-content: flex-start;
+              font-size: 30px;
+              font-weight: 500;
+            "
+          >
+            Upserve
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://github.com/meetalik8/UPSERVE-SYSTEM"
+              ><img
+                src="static/upserve.png"
+                alt=""
+                width="800px"
+                style="
+                  border: solid 2px #000000;
+                  box-shadow: 10px 10px #f29ad8;
+                "
+            /></a>
+          </td>
+        </tr>
+      </table>
     </section>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
