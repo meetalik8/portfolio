@@ -142,6 +142,17 @@
         border-radius: 20px;
         cursor: pointer;
       }
+      .socialmedia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .socialmedia a {
+        text-decoration: none;
+        color: var(--primary-text-color);
+        font-size: 24px;
+        margin-top: 30px;
+      }
     </style>
   </head>
   <body>
@@ -168,11 +179,30 @@
           <textarea name="message" id="" cols="30" rows="2"></textarea>
         </label>
         <div class="buttons">
-          <button type="submit">Submit</button>
+          <button type="submit" onclick="notWorking()">Submit</button>
           <button type="reset">Reset</button>
         </div>
       </fieldset>
     </form>
+    <div class="socialmedia">
+      <a href="contact.html">Connect with me!</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/in/meetalikapse/"
+        ><img src="static/linkedin.webp" alt="linkedin" height="35px" /></a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/meetalik8"
+        ><img src="static/github.png" alt="github" height="35px" /></a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://twitter.com/meetsshutup"
+        ><img src="static/twitter.webp" alt="twitter" height="35px" /></a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <script>
+      const notWorking = () => {
+        alert(
+          "The contact form currently is not working please contact through any of the social media handles!"
+        );
+      };
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
