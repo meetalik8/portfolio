@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Pacifico&family=Patrick+Hand&display=swap");
-/* font-family: 'Bungee Spice', cursive;
-font-family: 'Pacifico', cursive;
-font-family: 'Patrick Hand', cursive; */
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +17,9 @@ body {
   color: var(--primary-text-color);
   font-family: "Pacifico", cursive;
   margin: 30px;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav ul {
