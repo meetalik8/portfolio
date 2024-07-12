@@ -12,6 +12,11 @@
   --secondary-text-color: #ffffff;
   --accent-color: #fc9cd4;
   --vibrant-color: #2f27ce;
+  --temp-light-color: #f5f5f5;
+  --background-color-dark:#1e1e1e;
+  --vibrant-color-dark:#f1c40f;
+  --background-color:#ffffff;
+  --project-card-color:#fffae6;
 }
 
 
@@ -23,19 +28,69 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 30px;
-  background: white;
+  background: var(--background-color);
+  background-size: 40px 40px;
+  background-image: radial-gradient(circle, var(--primary-text-color) 1px, rgba(0, 0, 0, 0) 1px);
 }
-
+a{
+  color: var(--primary-text-color);
+}
+.dark-mode {
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #000000;
+  --background-color: var(--background-color-dark);
+  --vibrant-color: var(--vibrant-color-dark);
+  --temp-light-color: #717171;
+  color: var(--primary-text-color);
+  background-color: var(--background-color-dark);
+}
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
 nav {
   width: 100%;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  position: fixed;
 }
 .nav-links {
   display: flex;
@@ -54,15 +109,14 @@ nav {
   min-width: 97px;
   height: 35px;
   border-radius: 16px;
-  border: 1px solid black;
+  border: 1px solid var(--primary-text-color);
   text-align: center;
   text-decoration: none;
-  color: black;
   font-size: 12px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   word-wrap: break-word;
-  background: none;
+  background: var(--background-color);
 }
 .nav-button:hover {
   background-color: var(--accent-color);
@@ -70,6 +124,7 @@ nav {
 
 #intro {
   display: flex;
+  min-height: 100vh;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -87,14 +142,12 @@ nav {
   max-width: 50%;
 }
 .text-normal {
-  color: black;
   font-size: 32px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   word-wrap: break-word;
 }
 .text-bold {
-  color: black;
   font-size: 32px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -115,7 +168,6 @@ nav {
   gap: 9px;
 }
 .connect-text {
-  color: var(--primary-text-color);
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -140,6 +192,7 @@ nav {
   justify-content: center;
   padding: 2%;
   width: 100%;
+  height: 100vh;
 }
 .about-me-content {
   max-width: 100%;
@@ -169,7 +222,6 @@ nav {
   margin-top: 5px;
 }
 .about-me-text {
-  color: var(--primary-text-color);
   font-size: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -188,6 +240,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 .projects-container {
@@ -196,6 +249,13 @@ nav {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+
+.projects-container > .section-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
 }
 
 .projects-content {
@@ -207,11 +267,11 @@ nav {
 }
 
 .project {
-  background: white;
+  background: var(--background-color);
   border-radius: 8px;
   overflow: hidden;
   padding: 3px;
-  border: #000000 solid 2px;
+  border: var(--primary-text-color) solid 2px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -226,7 +286,7 @@ a{
 .project-name {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #2f27ce; 
+  color: var(--vibrant-color); 
 }
 
 .project-description {
@@ -234,7 +294,6 @@ a{
 }
 
 .project-text {
-  color: black;
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -254,7 +313,7 @@ a{
   display: inline-block;
   margin-right: 10px;
   padding: 5px 10px;
-  background: #e1e1e1;
+  background: var(--temp-light-color);
   border-radius: 10px;
   font-size: 0.9rem;
 }
@@ -290,66 +349,5 @@ a{
 
   .project-text {
     font-size: 0.9rem;
-  }
-}
-
-#design {
-  padding: 50px 0;
-  background-color: #f5f5f5;
-}
-
-.design-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.design-card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 300px;
-  text-align: center;
-}
-
-.design-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.design-image {
-  width: 100%;
-  height: auto;
-}
-
-.design-info {
-  padding: 20px;
-}
-
-.design-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2f27ce; 
-  margin-bottom: 10px;
-}
-
-.design-description {
-  font-size: 1rem;
-  color: #666;
-}
-
-@media (max-width: 768px) {
-  .design-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .design-card {
-    width: 90%;
   }
 }
