@@ -32,6 +32,7 @@
     <script src="https://kit.fontawesome.com/cb88b54bf5.js" crossorigin="anonymous"></script>
   </head>
   <body class="dark-mode">
+    <div class="blob"></div>
     <nav class="container main-nav">
       <ul class="nav-links">
         <li><a href="#intro" class="nav-button">home</a></li>
@@ -101,7 +102,7 @@
       <div class="about-me-content">
         <div class="section-title">
           <div class="section-title-text">
-            about me
+            About Me
             <div class="section-title-line"></div>
           </div>
         </div>
@@ -109,7 +110,7 @@
           I'm currently an Engineering Student at Thadomal Shahani Engineering
           College, majoring in Information Technology. <br /><br />
           As a developer, I have built things for the web with some awesome
-          people. I have interned at two incredible organizations
+          people. I have interned at three incredible organizations <a href="https://thehobbytribe.com/">The Hobby Tribe</a> ,
           <a href="https://augenblick.consulting/">Augenblick Consulting</a> and
           <a href="https://simppl.org/">SimPPL. </a><br /><br />
           As a designer, I enjoy bridging the gap between technology and human
@@ -118,22 +119,53 @@
           IETE-TSEC and led a team of 6 amazing designers! My goal is to always
           build creating solutions for real-world problems that are inclusive
           and accessible. <br /><br />
-          When I'm not in front of a computer screen, I'm probably crocheting,
-          volunteering or exploring new music!
+          When I'm not in front of a computer screen, I'm probably crocheting, volunteering or learning Spanish!
         </div>
       </div>
+    </section>
+
+ 
     </section>
 
     <section id="development">
       <div class="projects-container">
         <div class="section-title">
           <div class="section-title-text">
-            development
+            Featured Projects
             <div class="section-title-line"></div>
           </div>
           <a href="https://github.com/meetalik8"><div class="nav-button">More Projects!</div></a>
         </div>
         <div class="projects-content">
+          <div class="project">
+            <a href="https://github.com/meetalik8/CodeHers_Trend-Z"
+              ><img
+                class="project-image"
+                src="static/trendz.png"
+                alt="Homepage capture of project Trend-Z"
+                style="height: 200px; width: auto;"
+              />
+              <div class="project-description">
+                <span class="project-text">
+                  <div class="project-name">Trend-Z &nbsp; &nbsp;</div>
+                  <br />Developed at: Myntra's We For She Hackathon 2024<br />Awards: Pre-Finalist!<br /><br />
+                  An app designed specifically for Gen Z to keep up with the latest fashion trends.TrendZ is an innovative online shopping platform tailored for Gen Z consumers, combining personalized recommendations, interactive quizzes, and virtual try-on features to enhance the shopping experience. Users engage through FwdSnaps and virtual chatrooms, fostering community and creativity while discovering daily fashion trends. With a rewards system based on user engagement, TrendZ offers a dynamic, immersive way to shop that mirrors in-store experiences.
+
+
+
+<br /><br />
+                  <ul>
+                    Tech Used:
+                    <li class="stack">React Native</li>
+                    <li class="stack">Python</li>
+                    <li class="stack">Firebase</li>
+                    <li class="stack">Flask (Python web framework)</li>
+                    <li class="stack">ngrok</li>
+                  </ul>
+                </span>
+              </div>
+            </a>
+          </div>
           <div class="project">
             <a href="https://github.com/meetalik8/BinSense"
               ><img
@@ -223,35 +255,7 @@
               </div>
             </a>
           </div>
-          <div class="project">
-            <a href="https://github.com/meetalik8/MommyAndMe"
-              ><img
-                class="project-image"
-                src="static/mommyandme.png"
-                alt="Homepage capture of project MommyAndMe"
-              />
-              <div class="project-description">
-                <span class="project-text">
-                  <div class="project-name">Mommy And Me &nbsp; &nbsp;</div>
-                  <br />Developed at: Codeissance 2023 Hackathon<br />Awards:
-                  Top 10 teams!<br /><br />
-                  A web-based platform for new parents to help them transition
-                  into parenthood. This platform allows parents to get connected
-                  with resources, track appointments and vaccination dates. Get
-                  access to resources and stay upto date with children's
-                  growth.<br /><br />
-                  <ul>
-                    Tech Used:
-                    <li class="stack">HTML</li>
-                    <li class="stack">CSS</li>
-                    <li class="stack">JavaScript</li>
-                    <li class="stack">Flask</li>
-                    <li class="stack">Figma</li>
-                  </ul>
-                </span>
-              </div>
-            </a>
-          </div>
+          
           <div class="project">
             <a href="https://github.com/meetalik8/UPSERVE-SYSTEM"
               ><img
@@ -318,6 +322,14 @@
         }
         document.getElementById("checkbox").addEventListener("change", toggleDarkMode);
       });
+      
+      var cursor = document.querySelector('.blob');
+      document.addEventListener('mousemove', function(e){
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+      });
+
     </script>
   </body>
 </html>
