@@ -1,6 +1,6 @@
 # portfolio
-This is made using HTML, CSS and JavaScript. Its a work in progress, the old inspiration for the colours and the theme was the <em>Barbie</em> movie.<br>
-Here is the initial design of the project on <a href="https://www.figma.com/proto/gcMU2QW5pauGHrMcFG4RwA/Portfolio?node-id=0-1" target="_blank">Figma</a>
+This is made using TypeScript, ReactJS, Next.js, JavaScript and Tailwind. Its a work in progress, the inspiration for this was a blend of Indian elements (specifically Devnagri script), Modern UI design elements, and Colours!<br>
+Here is the design of the project on <a href="https://www.figma.com/proto/tHNhCliX2laSMRN0jr6Adh/portf?node-id=8-112&p=f&t=khwFIcHWRhrNcZVu-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A112" target="_blank">Figma</a>
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
