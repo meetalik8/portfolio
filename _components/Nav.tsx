@@ -7,7 +7,7 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-dvw px-[50px] py-[15px] bg-white backdrop-blur-[50px] fixed top-0 left-0 right-0 shadow-sm z-50">
+    <nav className="w-vw px-[50px] py-[15px] bg-white backdrop-blur-[50px] fixed top-0 left-0 right-0 shadow-sm z-50">
       <div className="container inline-flex justify-between items-center h-full">
         <a href="#">
           <Image

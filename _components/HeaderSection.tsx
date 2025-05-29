@@ -1,14 +1,14 @@
 import React from "react";
-import LinksSection from "./LinksSection";
+import LinksSection from "@/_components/LinksSection";
 
 function HeaderSection() {
   return (
-    <div className="h-screen flex flex-col">
-      <div className="header-bg flex flex-col md:flex-row justify-center items-center px-6 md:px-15 py-8 md:py-[80px] md:gap-20 md:mt-[50px] mt-[80px]">
+    <div className="h-screen flex flex-col overflow-x-hidden md:overflow-y-hidden overflow-y-auto">
+      <div className="header-bg flex-grow flex flex-col md:flex-row justify-center items-center px-6 md:px-15 py-8 md:py-[80px] md:gap-20 md:mt-[50px] mt-[80px]">
         <div className="flex flex-col justify-center items-start text-center md:text-left ">
           <h1 className="header-title">Hello!</h1>
           <h1 className="header-title">I'm Meetali Kapse</h1>
-          <div className="header-description leading-relaxed">
+          <div className="header-description leading-relaxed md:text-left">
             <span className="text-primary">A </span>
             <span className="text-accent-purple">design</span>
             <span className="text-primary">-minded front-end web </span>
@@ -21,7 +21,8 @@ function HeaderSection() {
             </span>
           </div>
         </div>
-        <div className="relative flex justify-center mt-10 md:mt-0">
+
+        <div className="relative flex justify-center mt-10 md:mt-0 ">
           <img
             src="pinkSparks.svg"
             alt="decorative svg"
@@ -31,8 +32,34 @@ function HeaderSection() {
             <img
               src="pfp.JPG"
               alt="my picture"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover pointer-events-none select-none"
             />
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#C73694] py-4 flex justify-center">
+        <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row sm:items-center gap-4">
+          <div className="text-white text-[20px] sm:text-[28px] tracking-[-1px] whitespace-nowrap text-center sm:text-left w-full sm:w-auto">
+            Tech Stack:
+          </div>
+          <div className="flex flex-wrap justify-center sm:justify-start items-center gap-3">
+            {[
+              "ReactJS",
+              "React Native",
+              "TypeScript",
+              "JavaScript",
+              "Flask",
+              "Firebase",
+              "Tailwind",
+              "Figma",
+            ].map((tech, i) => (
+              <span
+                key={i}
+                className="text-white text-base sm:text-lg font-medium tracking-tight"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
         </div>
       </div>

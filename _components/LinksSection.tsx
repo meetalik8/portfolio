@@ -1,5 +1,5 @@
 import React from "react";
-import NavButton from "./NavButton";
+import NavButton from "@/_components/NavButton";
 
 
 function LinksSection() {
