@@ -43,7 +43,7 @@ export default function Nav() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#intern">
                 <NavButton
                   logo="/briefcase-business.svg"
                   text="Internships"
@@ -53,7 +53,7 @@ export default function Nav() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#dev">
                 <NavButton
                   logo="/laptop.svg"
                   text="Development"
@@ -63,7 +63,7 @@ export default function Nav() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#design">
                 <NavButton
                   logo="/palette.svg"
                   text="Design"

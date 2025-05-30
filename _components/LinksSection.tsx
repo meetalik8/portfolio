@@ -4,7 +4,7 @@ import NavButton from "@/_components/NavButton";
 
 function LinksSection() {
   return (
-    <div className="bg-[#5F202A] flex flex-wrap justify-center items-center gap-4 flex-col sm:flex-row py-4">
+    <div className="bg-[#5F202A] flex flex-wrap justify-center items-center gap-4 flex-col sm:flex-row py-2">
       <div className="text-[#fff] text-[20px] sm:text-[28px] tracking-[-1px]">
         Quick Links
       </div>

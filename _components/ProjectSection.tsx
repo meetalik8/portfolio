@@ -68,7 +68,7 @@ function ProjectSection() {
       description:
         "WorkWave is a web-based application designed for white-collar professionals, including lawyers, IT professionals, engineers and other professionals. Clients can connect with various service providers through our platform, eliminating the need to search extensively elsewhere. Users can effortlessly engage with services directly through our platform",
       stack: ["HTML5", "JavaScript", "Flask"],
-      link: "https://github.com/meetalik8/BinSense",
+      link: "https://github.com/meetalik8/workwave",
     },
   ];
 
@@ -76,8 +76,16 @@ function ProjectSection() {
   return (
     <div className="bg-[#262626] in-h-screen px-4 sm:px-6 md:px-2 pb-10">
       <div className=" flex justify-between  px-[60px] pt-[40px] pb-[10px]">
-        <div className="text-[#DAFFDE] text-3xl md:text-8xl sm:tracking-[-2px] md:tracking-[-2px] transition-all duration-300">
-          Development Projects
+        <div
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          style={{
+            fontFamily: hovered ? "'Teko', cursive" : "'Inter', serif",
+          }}
+          className="text-[#DAFFDE] text-3xl md:text-6xl sm:tracking-[-2px] md:tracking-[-2px] transition-all duration-300"
+          id="dev"
+        >
+          {hovered ? "डेवेलपमेंट प्रोजेक्ट्s" : "Development Projects"}
         </div>
         <div
           onMouseEnter={() => setHovered(true)}
@@ -92,7 +100,7 @@ function ProjectSection() {
             <img
               src="dev.svg"
               alt="an arrow"
-              className="h-15 sm:h-10 md:h-30"
+              className="h-15 sm:h-10 md:h-20"
             />
           </a>
         </div>

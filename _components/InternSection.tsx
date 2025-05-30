@@ -2,6 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import InternCard from "@/_components/InternCard";
+import { link } from "fs";
 
 
 function InternSection() {
@@ -31,7 +32,8 @@ function InternSection() {
             WebkitTextStrokeWidth: hovered ? "0.5px" : "0.5px",
             WebkitTextStrokeColor: hovered ? "#666666" : "#666",
           }}
-          className="text-[#23AD7E] text-5xl md:text-8xl sm:tracking-[-2px] md:tracking-[-2px] transition-all duration-300"
+          className="text-[#23AD7E] text-4xl md:text-7xl sm:tracking-[-2px] md:tracking-[-2px] transition-all duration-300"
+          id="intern"
         >
           {hovered ? "वर्क & इंटर्नशिपs" : "Work & Internships"}
         </div>
@@ -48,7 +50,7 @@ function InternSection() {
             <img
               src="green.svg"
               alt="an arrow"
-              className="h-15 sm:h-10 md:h-30"
+              className="h-15 sm:h-10 md:h-20"
             />
           </a>
         </div>
@@ -181,6 +183,7 @@ function InternSection() {
                 textColor: "text-[#23AD7E]",
               },
             ]}
+            link="https://github.com/meetalik8/KernelChart"
           />
         </div>
         <button

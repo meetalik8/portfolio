@@ -4,6 +4,7 @@ import HeaderSection from "@/_components/HeaderSection";
 import InternSection from "@/_components/InternSection";
 import ProjectSection from "@/_components/ProjectSection";
 import DesignSection from "@/_components/DesignSection";
+import Footer from "@/_components/Footer";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
       <InternSection />
       <ProjectSection />
       <DesignSection />
+      <Footer />
     </div>
   );
 }
