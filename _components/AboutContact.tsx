@@ -4,7 +4,7 @@ import React from "react";
 
 export default function AboutContact() {
   return (
-    <footer className="bg-[#F15A28] px-4 sm:px-6 md:px-2 py-6">
+    <footer className="bg-[#F15A28] px-4 sm:px-6 md:px-2 py-6" id="aboutme">
       <div className="flex flex-col justify-between  px-[60px] pt-[40px] pb-[10px]">
         <h1
           className="text-[#fff] text-6xl"

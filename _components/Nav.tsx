@@ -33,7 +33,7 @@ export default function Nav() {
         >
           <ul className="flex flex-col md:flex-row md:gap-[15px] gap-y-4 text-center pb-5 pt-5 top-0">
             <li>
-              <a href="#">
+              <a href="#aboutme">
                 <NavButton
                   logo="/sparkles.svg"
                   text="About Me"
@@ -73,7 +73,7 @@ export default function Nav() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://drive.google.com/file/d/1604GKiABWNrxTMGCeGEUvzHYOMUr7MrC/view?usp=sharing">
                 <NavButton
                   logo="/file.svg"
                   text="Resume"

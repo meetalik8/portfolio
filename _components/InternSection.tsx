@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import InternCard from "@/_components/InternCard";
-import { link } from "fs";
+
 
 
 function InternSection() {

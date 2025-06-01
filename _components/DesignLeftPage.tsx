@@ -9,6 +9,7 @@ interface LeftPageProps {
   role: string;
   images: string[];
   limit: number;
+  link:string;
 }
 
 export default function DesignLeftPage({
@@ -18,6 +19,7 @@ export default function DesignLeftPage({
     role,
     images,
     limit,
+    link,
   }: LeftPageProps) {
     const [hovered, setHovered] = useState(false);
   return (
@@ -48,13 +50,13 @@ export default function DesignLeftPage({
             transform: hovered ? "rotate(38deg)" : "rotate(0deg)",
           }}
         >
-          <a href="https://www.behance.net/meetalikapse">
+          <a href={link}>
             <img src="black.svg" alt="an arrow" className="h-8 md:h-10" />
           </a>
         </div>
       </div>
 
-      <div className="py-2 md:py-0">
+      <div className="pb-2 md:py-0">
         <p className="text-md md:text-lg underline tracking-tight">My Role: </p>
         <p className="text-md tracking-tight text-left">{role}</p>
       </div>
@@ -68,13 +70,13 @@ export default function DesignLeftPage({
         </p>
       ))}
 
-      <div className="flex flex-wrap gap-2 pb-3 max-h-[50%]">
+      <div className="flex flex-wrap pb-8 max-h-[50%]">
         {images.slice(0, limit).map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`Design preview ${index + 1}`}
-            className="max-h-[100%] max-w-full object-contain rounded-md shadow-md flex-shrink-0"
+            className="max-h-[100%] max-w-[100%] object-contain rounded-md shadow-md flex-shrink-0"
           />
         ))}
       </div>

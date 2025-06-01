@@ -37,7 +37,7 @@ function HeaderSection() {
           </div>
         </div>
       </div>
-      <div className="bg-[#C73694] py-2 flex justify-center">
+      <div className="bg-[rgb(199,54,148)] py-2 flex justify-center">
         <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row sm:items-center gap-4">
           <div className="text-white text-[20px] sm:text-[28px] tracking-[-1px] whitespace-nowrap text-center sm:text-left w-full sm:w-auto">
             Tech Stack:
@@ -55,7 +55,7 @@ function HeaderSection() {
             ].map((tech, i) => (
               <span
                 key={i}
-                className="text-white text-base sm:text-lg font-medium tracking-tight"
+                className="bg-white/20 rounded-md px-4 text-white text-base sm:text-lg font-medium tracking-tight"
               >
                 {tech}
               </span>

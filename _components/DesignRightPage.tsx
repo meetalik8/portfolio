@@ -22,8 +22,8 @@ export default function DesignRightPage({
           display: "grid",
           gridTemplateColumns: "1fr",
           gridTemplateRows: "1fr",
-          width: "100%",
-          maxHeight: "100%",
+          width: "75%",
+          height: "auto",
           gap: "4px",
         };
       case 2:
@@ -32,8 +32,8 @@ export default function DesignRightPage({
           display: "grid",
           gridTemplateColumns: "1fr",
           gridTemplateRows: "1fr 1fr",
-          width: "75%",
-          height: "auto",
+          height: "50%",
+          width: "auto",
           gap: "4px",
         };
       case 3:
