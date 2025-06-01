@@ -77,7 +77,7 @@ export default function DesignRightPage({
       rounded-xl
         md:flex-col
         sm:rounded-none
-        sm:px-4 sm:py-3"
+        sm:px-4 sm:py-3 text-black"
     >
       <div className="text-sm pt-2.5 md:text-3xl md:pt-2.5 text-end">
         {duration}

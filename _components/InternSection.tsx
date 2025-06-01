@@ -20,7 +20,7 @@ function InternSection() {
   };
 
   return (
-    <div className="bg-[rgb(237,255,146)] in-h-screen px-4 sm:px-6 md:px-2 pb-10">
+    <div className="bg-[rgb(237,255,146)] in-h-screen px-4 sm:px-6 md:px-2 pb-10 text-black">
       <div className=" flex justify-between  px-[60px] pt-[40px] pb-[10px]">
         <div
           onMouseEnter={() => setHovered(true)}

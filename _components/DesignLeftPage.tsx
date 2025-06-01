@@ -29,7 +29,7 @@ export default function DesignLeftPage({
       rounded-xl
         md:flex-col
         sm:rounded-none
-        sm:px-4 sm:py-3"
+        sm:px-4 sm:py-3 text-black"
       style={{ minHeight: "400px" }}
     >
       <div className="text-sm pt-2.5 md:text-3xl md:pt-2.5">
