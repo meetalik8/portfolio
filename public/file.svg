@@ -1,0 +1,11 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="lucide/file">
+<path id="Vector" d="M11.6654 1.66699V5.00033C11.6654 5.44235 11.841 5.86628 12.1535 6.17884C12.4661 6.4914 12.89 6.66699 13.332 6.66699H16.6654M12.4987 1.66699H4.9987C4.55667 1.66699 4.13275 1.84259 3.82019 2.15515C3.50763 2.46771 3.33203 2.89163 3.33203 3.33366V16.667C3.33203 17.109 3.50763 17.5329 3.82019 17.8455C4.13275 18.1581 4.55667 18.3337 4.9987 18.3337H14.9987C15.4407 18.3337 15.8646 18.1581 16.1772 17.8455C16.4898 17.5329 16.6654 17.109 16.6654 16.667V5.83366L12.4987 1.66699Z" stroke="url(#paint0_linear_59_80)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_59_80" x1="9.9987" y1="1.66699" x2="9.9987" y2="18.3337" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FCCC2D"/>
+<stop offset="1" stop-color="#D3A204"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,93 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yatra+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mouse+Memoirs&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Teko:wght@300..700&family=Yatra+One&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-inter: 'Inter', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-yatra: 'Yatra One', cursive;
+  --font-bebas: 'Bebas Neue', sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-inter);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Helvetica, sans-serif;
+}
+.header-bg {
+  @apply bg-cover bg-center h-screen w-screen;
+  background-image: url('/HeaderBG.svg');
+}
+
+.header-title {
+  @apply text-[#15197c] text-[32px] md:text-[48px] font-semibold tracking-[-1px] md:tracking-[-1.5px] ;
+}
+
+.header-description {
+  @apply w-full md:w-[765px] text-[18px] md:text-[32px] font-medium tracking-[-1px] md:tracking-[-1.5px];
+}
+
+.text-primary {
+  @apply text-[#15197c];
+}
+
+.text-accent-purple {
+  @apply text-[#bb8ad7];
+}
+
+.text-accent-green {
+  @apply text-[#2cbd85];
+}
+
+.text-accent-yellow {
+  @apply text-[#76a908];
+}
+
+.text-stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #666;
+}
+
+/* Customize scrollbar for WebKit browsers */
+.scroll-container::-webkit-scrollbar {
+  height: 6px;
+  background: transparent;
+}
+.scroll-container:hover::-webkit-scrollbar-thumb {
+  background-color: #23AD7E;
+  border-radius: 8px;
+}
+
+.font-inter {
+  font-family: var(--font-inter)
+}
+.font-bebas {
+  font-family: var(--font-bebas)
+}
+.font-yatra {
+  font-family: var(--font-yatra)
+}
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+.book-bg{
+  @apply bg-cover bg-center h-full w-full;
+  background-image: url('/paperbg.svg');
+}
