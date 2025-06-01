@@ -31,7 +31,7 @@ body {
   font-family: var(--font-inter), Helvetica, sans-serif;
 }
 .header-bg {
-  @apply bg-cover bg-center h-screen w-screen;
+  @apply bg-white bg-cover bg-center h-screen w-screen;
   background-image: url('/HeaderBG.svg');
 }
 
